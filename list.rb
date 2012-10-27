@@ -29,22 +29,26 @@ class List
 
 
         def go=(element)
+           puts "            SELF ELEMENT           "
            @list.each do |link_next, el| 
               if el == element
-		   key = @list.index [link_next, el] 
-		   puts "KEY - #{key}     NEXT LINK - #{link_next}     VALUE - #{el} "
+		   key1 = @list.index [link_next, el] 
+		   puts "KEY - #{key1}     NEXT LINK - #{link_next}     VALUE - #{el} "
               end
            end
 	end
 
        
         def nextt=(element)
+
+           self.go=(element)
+           
+
            puts "               NEXT ELEMENT           "
            @list.each do |link_next, el| 
               if el == element
-		   key = @list.index [link_next, el] 
-                   key += 1
-		   puts "#{@list[key]}"
+		   # puts "#{@list[link_next]}"
+                   puts "KEY - #{link_next}     NEXT LINK - #{@list[link_next][0]}     VALUE - #{@list[link_next][1]} "
               end
            end
 	end
@@ -63,7 +67,6 @@ list.add=('element4')
 list.theend
 
 
-#nextt=('element3')
-#go=('element3')
+list.nextt=('element3')
 
-list.all
+
