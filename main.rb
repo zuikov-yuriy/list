@@ -18,10 +18,15 @@ list.add(node2)
 list.add(node3)
 
 
+puts  list.all
+
+
+
+
 #puts list.count
-#list.view_next(node5)
+#list.view_next(node1)
 #puts list.all
 #puts list.start_element.data
-#puts list.end_element .data
+#puts list.end_element.data
 #puts node2.go.data
-#puts node5.go
+#puts node1.go

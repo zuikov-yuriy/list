@@ -7,7 +7,7 @@ class Node
 	 @go = nil
   end
 
-  def link(go)
+  def next(go)
      @go = go
   end
 
