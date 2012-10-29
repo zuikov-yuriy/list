@@ -9,12 +9,13 @@ class List
 
    def add(obj)
       if @count == 0
-         @start_element = obj
-	     @count += 1
-      else
-	     @end_element.link obj
-		 @count += 1
-      end	 
+           @start_element = obj
+	   @count += 1
+        else
+	   @end_element.link obj
+	   @count += 1
+      end
+
     @end_element = obj 
    end
 
