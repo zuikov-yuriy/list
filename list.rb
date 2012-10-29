@@ -20,7 +20,7 @@ attr_reader :start_element, :end_element
 	 #@size = 5
    end 
 
-   def add=(obj)
+   def add(obj)
 
      if @head == 0
           obj.link 0
@@ -37,20 +37,21 @@ attr_reader :start_element, :end_element
 
    
    
-   def next_link(n)
-	  @n = n.go
-   end
+
    
    
-   def view_next=(obj)
+   def view_next(obj)
      @this = obj
+	 
 	 puts "SELECT ELEMENT"
 	 puts "#{@this.data}"
-   
-            @nx = self.next_link(@this)
 
-			 puts "NEXT ELEMENT"
-			 puts " #{@nx.data}"
+	 if @this == @end_element
+	    puts "END ELEMENT"
+	 else
+	    puts "NEXT ELEMENT"
+		puts " #{@this.go.data}"
+	 end 
 	 
    end
    
@@ -61,24 +62,22 @@ attr_reader :start_element, :end_element
    
    
    def all
-     
          @start = @start_element
 		 @end = @end_element
          @obj = nil
 		 
 		 loop do
-
 		   if @obj == nil
-		     @data = @start
-			 @obj = @start.go
+		       @data = @start
+			   @obj = @start.go
 		   else  
- 		     @data = @obj
-			 @obj = @obj.go
+ 		       @data = @obj
+			   @obj = @obj.go
 		   end
 			
 			puts @data.data
 			
-			         @e = @data
+			     @e = @data
 	
 		    break if @e == @end
 
@@ -103,20 +102,20 @@ node4 = Node.new('ELEMENT - 4')
 node5 = Node.new('ELEMENT - 5')
 
 list = List.new
-list.add=(node1)
-list.add=(node2)
-list.add=(node3)
-list.add=(node4)
-list.add=(node5)
+list.add(node1)
+list.add(node2)
+list.add(node3)
+list.add(node4)
+list.add(node5)
 
 
 
 
 
 
-list.all
+#list.all
 
-#list.view_next=(node3)
+list.view_next(node5)
 
 
 
