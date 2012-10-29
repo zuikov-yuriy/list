@@ -1,21 +1,3 @@
-class Node
-
-  attr_reader :data, :go
-  
-  def initialize(data)
-     @data = data
-	 @go = nil
-  end
-
-  def link(go)
-     @go = go
-  end
-
-end
-
-
-
-
 class List
 
    attr_reader :start_element, :end_element, :count
@@ -82,26 +64,7 @@ class List
 end
 
 
-node1 = Node.new('ELEMENT - 1')
-node2 = Node.new('ELEMENT - 2')
-node3 = Node.new('ELEMENT - 3')
 
-list = List.new
-list.add(node1)
-list.add(node2)
-list.add(node3)
-
-
-
-
-
-#puts list.count
-#list.view_next(node5)
-#puts list.all
-#puts list.start_element.data
-#puts list.end_element .data
-#puts node2.go.data
-#puts node5.go
 
 
 
