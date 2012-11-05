@@ -4,11 +4,6 @@
     <list default="true" id="f795b43b-baad-481b-b864-ace85cdaffbf" name="Default" comment="">
       <change type="DELETED" beforePath="$PROJECT_DIR$/spec/list2_spec.rb" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/list.rb" afterPath="$PROJECT_DIR$/list.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main.rb" afterPath="$PROJECT_DIR$/main.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node.rb" afterPath="$PROJECT_DIR$/node.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spec/list_spec.rb" afterPath="$PROJECT_DIR$/spec/list_spec.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spec/node_spec.rb" afterPath="$PROJECT_DIR$/spec/node_spec.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spec/spec_helper.rb" afterPath="$PROJECT_DIR$/spec/spec_helper.rb" />
     </list>
     <ignored path="unit_tests.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -36,19 +31,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="list.rb" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="list.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/list.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="20" selection-start="253" selection-end="264" vertical-scroll-proportion="0.0">
+            <state line="57" column="45" selection-start="797" selection-end="797" vertical-scroll-proportion="1.1219512">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="list_spec.rb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="list_spec.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/spec/list_spec.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="19" selection-start="487" selection-end="487" vertical-scroll-proportion="0.4878049">
+            <state line="20" column="19" selection-start="487" selection-end="487" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -68,9 +63,9 @@
     <option name="changedFiles">
       <list>
         <option value="$PROJECT_DIR$/spec/node_spec.rb" />
-        <option value="$PROJECT_DIR$/list.rb" />
         <option value="$PROJECT_DIR$/main.rb" />
         <option value="$PROJECT_DIR$/spec/list_spec.rb" />
+        <option value="$PROJECT_DIR$/list.rb" />
       </list>
     </option>
   </component>
@@ -407,6 +402,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/spec/list_spec.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="19" selection-start="487" selection-end="487" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/node.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="6" column="18" selection-start="86" selection-end="95" vertical-scroll-proportion="0.0">
@@ -416,14 +418,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/list.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="20" selection-start="253" selection-end="264" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spec/list_spec.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="19" selection-start="487" selection-end="487" vertical-scroll-proportion="0.4878049">
+        <state line="57" column="45" selection-start="797" selection-end="797" vertical-scroll-proportion="1.1219512">
           <folding />
         </state>
       </provider>
