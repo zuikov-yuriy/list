@@ -1,42 +1,34 @@
 require '../list'
-require '../node'
 
 describe "Single linked list" do
 
-  context "test object " do
+  let(:l) { List.new }
 
-		before(:all) do
-		  @node1 = Node.new("Element 1")
-		  @node2 = Node.new("Element 2")
-		  @node3 = Node.new("Element 3")
-		  @list = List.new
-		end
-		
-	
-	     it " - Add node in list" do
-		  @list.add(@node1)
-		  @list.add(@node2)
-		  @list.add(@node3)
-        end
+  describe "#initialize" do
+    it "should be initialized as empty list" do
+      List.new.should be_true
+    end
+  end
 
-		
-		
-	     it " - View next Element" do
-		   @list.view_next(@node2)
-		   @list.next_el.data.should == "Element 3"
-        end
-		
-		
-		
-	     it " - View All Elements" do
-          @list.all.should be_nil
+  describe "#add method test" do
 
-        end
-		
-		
-	
-		
-   end
-	
+    it "should be first and end element in list equal created object NODE" do
+      @node = mock('Node')
+      @node.stub(:data){"Element1"}
+      @node.stub(:go){nil}
+      l.add(@node)
+      l.start_element.data.should eq("Element1")
+      l.end_element.data.should eq("Element1")
+    end
+
+    it "should increase count by 1" do
+      expect{l.add(@node)}.to change{l.count}.by(1)
+    end
+
+    it "should raise an exception if called with no params" do
+      lambda { l.add }.should raise_error(ArgumentError, "wrong number of arguments (0 for 1)")
+    end
+
+  end
 
 end

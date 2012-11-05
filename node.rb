@@ -4,7 +4,7 @@ class Node
   
   def initialize(data)
      @data = data
-	 @go = nil
+     @go = nil
   end
 
   def next(go)
